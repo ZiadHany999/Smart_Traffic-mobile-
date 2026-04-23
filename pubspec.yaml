@@ -1,0 +1,54 @@
+name: first_project
+description: "A new Flutter project for Smart Traffic Management System."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # --- مكتبات التصميم والواجهة (UI & Design) ---
+  cupertino_icons: ^1.0.8
+  dotted_border: ^2.1.0
+  font_awesome_flutter: ^10.7.0
+  intl_phone_field: ^3.2.0
+  intl: ^0.19.0
+
+  # --- مكتبات الخرائط والملاحة (Maps & Navigation) ---
+  # استخدمنا v6 عشان تتوافق مع كود الطريق اللي عملناه
+  flutter_map: ^6.1.0 
+  latlong2: ^0.9.0
+  google_polyline_algorithm: ^3.0.0
+  google_maps_flutter: ^2.5.3
+
+  # --- مكتبات الموقع والـ GPS ---
+  geolocator: ^10.1.0
+  geocoding: ^3.0.0
+
+  # --- مكتبات النظام والخدمات (System & Utilities) ---
+  url_launcher: ^6.3.0
+  http: ^1.1.0
+  image_picker: ^1.0.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+
+  # ضبط مسافات الـ Assets
+  assets:
+    - assets/icon/smart.png
+
+# إعدادات أيقونة التطبيق
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/smart.png"
